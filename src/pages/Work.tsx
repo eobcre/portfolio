@@ -3,6 +3,11 @@ import { Icon } from "@iconify/react";
 import Image from "../assets/bg-image-03.png";
 
 const Work = () => {
+  const work = [
+    { id: 1, title: "Amazon Bedrock x LEGO Train", path: "https://github.com/eobcre/lego-ai-project", desc: `` },
+    { id: 2, title: "AWS x RAG", path: "https://github.com/eobcre/bedrock-rag-project", desc: `` },
+  ];
+
   return (
     <div className="grid grid-cols-4 text-main font-custom h-screen">
       {/* left */}
@@ -19,37 +24,25 @@ const Work = () => {
         </div>
       </div>
       {/* right */}
-      <div className="col-span-2 overflow-y-auto px-8 py-30">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio
-          est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum
-          quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt
-          ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam
-          ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla!
-          Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga
-          officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque
-          illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem
-          soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-          voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est
-          esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum
-          quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt
-          ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam
-          ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla!
-          Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga
-          officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque
-          illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem
-          soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-          voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est esse sit. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum quisquam optio est
-          esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt ratione, earum
-          quisquam optio est esse sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptatibus quidem soluta cumque illum vero fuga officiis nulla! Fugiat aliquam ullam omnis sunt
-          ratione, earum quisquam optio est esse sit.
-        </p>
+      <div className="flex flex-col gap-16 col-span-2 overflow-y-auto px-30 py-30">
+        {work.map((item) => (
+          <div key={item.id} className="flex flex-col gap-4">
+            <div className="flex justify-between">
+              <p className="text-lg font-semibold">{item.title}</p>
+              <a href={item.path} target="_blank" rel="noopener noreferrer">
+                <Icon icon="proicons:github" width="40" height="40" className="cursor-pointer hover:opacity-70 transition-all duration-300 ease-out" />
+              </a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores ea qui eius laborum
+              doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores
+              ea qui eius laborum doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam,
+              labore vitae maiores ea qui eius laborum doloremque porro officiis.
+            </p>
+            {/* underline */}
+            <span className="bg-gray-200 w-full h-px" />
+          </div>
+        ))}
       </div>
     </div>
   );
