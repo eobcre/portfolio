@@ -10,19 +10,23 @@ const Hero = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-6 font-custom px-8 py-10 h-screen">
-      <div>
-        <p className="text-main text-9xl uppercase">Emmy Manning</p>
+    <div className="flex flex-col items-center gap-6 font-custom md:px-8 py-10 h-screen">
+      <div className="flex flex-col gap-2">
+        <p className="text-main text-4xl md:text-7xl lg:text-8xl xl:text-9xl uppercase">Emmy Manning</p>
         <div className="flex justify-end items-center gap-2">
-          <p className="text-main text-2xl">AI Cloud Engineer ー</p>
-          <Icon icon="foundation:social-linkedin" width="40" height="40" className="text-main cursor-pointer hover:opacity-70 transition-all duration-300 ease-out" />
-          <Icon icon="proicons:github" width="40" height="40" className="text-main cursor-pointer hover:opacity-70 transition-all duration-300 ease-out" />
+          <p className="text-main text-xl xl:text-2xl">AI Cloud Engineer ー</p>
+          <a href="https://www.linkedin.com/in/emmymanning/" target="_blank" rel="noopener noreferrer">
+            <Icon icon="foundation:social-linkedin" className="text-main cursor-pointer hover:opacity-70 transition-all duration-300 ease-out w-[30px] h-[30px] md:w-[40px] md:h-[40px]" />
+          </a>
+          <a href="https://github.com/eobcre" target="_blank" rel="noopener noreferrer">
+            <Icon icon="proicons:github" className="text-main cursor-pointer hover:opacity-70 transition-all duration-300 ease-out w-[30px] h-[30px] md:w-[40px] md:h-[40px]" />
+          </a>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4 w-2/3 h-full">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-full">
         {cards.map((card, index) => (
           <Link key={card.id} to={card.path}>
-            <div key={index} className={`bg-cover bg-center shadow-2xl rounded cursor-pointer hover:opacity-70 transition-all duration-300 ease-out h-full ${card.bg}`}>
+            <div key={index} className={`bg-cover bg-center shadow-2xl xl:rounded cursor-pointer hover:opacity-70 transition-all duration-300 ease-out h-full ${card.bg}`}>
               <div className="px-4">
                 <p className="text-white text-9xl">{card.order}</p>
                 <p className="border border-white"></p>
