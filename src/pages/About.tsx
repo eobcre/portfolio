@@ -4,7 +4,7 @@ import Image from "../assets/bg-image-01.png";
 
 const About = () => {
   return (
-    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom h-screen">
+    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom min-h-screen xl:h-screen">
       {/* left */}
       <div className="flex flex-col gap-4 col-span-2 px-4 py-6">
         {/* back button */}
@@ -19,7 +19,7 @@ const About = () => {
         </div>
       </div>
       {/* right */}
-      <div className="relative flex flex-col justify-center items-center col-span-2 overflow-y-auto px-8 py-18 md:px-30 md:py-30">
+      <div className="relative flex flex-col justify-center items-center col-span-2 xl:overflow-y-auto px-8 py-18 md:px-30 md:py-30">
         <p className="leading-loose">
           I am an AI Cloud Engineer with a strong Full-Stack development background, focused on designing scalable AI-driven systems on AWS. My work centers around Retrieval-Augmented Generation (RAG)
           architectures using Amazon Bedrock, integrating LLM workflows with custom backend services and modern React frontends. With hands-on experience deploying production web applications on AWS

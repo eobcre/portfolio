@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom h-screen">
+    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom min-h-screen xl:h-screen">
       {/* left */}
       <div className="flex flex-col gap-4 col-span-2 px-4 py-6">
         {/* back button */}
@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
       </div>
       {/* right */}
-      <div className="grid col-span-2 items-center overflow-y-auto px-6 md:px-20 py-10">
+      <div className="grid col-span-2 items-center xl:overflow-y-auto px-6 md:px-20 py-10">
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* name */}
           <div className="flex gap-2">

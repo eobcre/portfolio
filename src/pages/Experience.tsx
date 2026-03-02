@@ -22,7 +22,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom h-screen">
+    <div className="md:flex md:flex-col xl:grid xl:grid-cols-4 text-main font-custom min-h-screen xl:h-screen">
       {/* left */}
       <div className="flex flex-col gap-14 col-span-2 px-4 py-6">
         {/* back button */}
@@ -39,7 +39,7 @@ const Experience = () => {
         </div>
       </div>
       {/* right */}
-      <div className="flex flex-col gap-16 col-span-2 overflow-y-auto px-8 py-10 md:px-30 md:py-30">
+      <div className="flex flex-col gap-16 col-span-2 xl:overflow-y-auto px-8 py-10 md:px-30 md:py-30">
         {experience.map((item, index) => (
           <div key={item.id} className="flex flex-col gap-4">
             <p className="text-sm">{item.date}</p>
