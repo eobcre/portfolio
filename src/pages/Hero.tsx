@@ -36,6 +36,7 @@ const Hero = () => {
           </Link>
         ))}
       </div>
+      <footer className="text-main font-[Arial]">© {new Date().getFullYear()} Emmy Manning</footer>
     </div>
   );
 };
