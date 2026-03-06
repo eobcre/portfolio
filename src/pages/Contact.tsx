@@ -16,11 +16,11 @@ const Contact = () => {
     formState: { errors },
   } = useForm<FormValues>();
 
-  const API = import.meta.env.VITE_API_URL;
-
   const onSubmit = async (data: FormValues) => {
+    // console.log("data:", data);
+
     try {
-      const res = await fetch(`${API}/api/emails`, {
+      const res = await fetch(`/api/emails`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
