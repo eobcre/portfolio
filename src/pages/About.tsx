@@ -22,10 +22,9 @@ const About = () => {
       <div className="relative flex flex-col justify-center items-center col-span-2 xl:overflow-y-auto px-8 py-18 md:px-30 md:py-30">
         <p className="leading-loose">
           I am an AI Cloud Engineer with a strong Full-Stack development background, focused on designing scalable AI-driven systems on AWS. My work centers around Retrieval-Augmented Generation (RAG)
-          architectures using Amazon Bedrock, integrating LLM workflows with custom backend services and modern React frontends. With hands-on experience deploying production web applications on AWS
-          (S3, CloudFront, EC2), I prioritize clean architecture, async API design, and cost-efficient cloud infrastructure. AWS Certified (Cloud Practitioner, Solutions Architect Associate),
-          currently pursuing Developer Associate to deepen expertise in cloud-native application development. I am particularly interested in large-scale AI system design, LLM integration pipelines,
-          and building reliable AI-powered cloud services.
+          architectures using Amazon Bedrock, integrating LLM workflows with custom backend services and modern React frontends. With hands-on experience deploying production web applications on AWS ,
+          I prioritize clean architecture, async API design, and cost-efficient cloud infrastructure. I am particularly interested in large-scale AI system design, LLM integration pipelines, and building reliable
+          AI-powered cloud services.
         </p>
       </div>
     </div>
