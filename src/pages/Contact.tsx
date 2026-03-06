@@ -16,8 +16,25 @@ const Contact = () => {
     formState: { errors },
   } = useForm<FormValues>();
 
-  const onSubmit = (data: FormValues) => {
-    console.log("data:", data);
+  const API = import.meta.env.VITE_API_URL;
+
+  const onSubmit = async (data: FormValues) => {
+    try {
+      const res = await fetch(`${API}/api/emails`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        alert("Message sent!!!!");
+      } else {
+        alert("Error sending message.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Network error.");
+    }
   };
 
   return (
@@ -30,7 +47,7 @@ const Contact = () => {
         </Link>
         {/* page title */}
         <div className="relative flex flex-col justify-center items-center flex-1 gap-6 py-20 xl:py-0">
-          <img src={Image} alt="Image" className="absolute opacity-10 w-60 xl:w-150" />
+          <img src={Image} alt="Image" className="absolute opacity-10 w-60 xl:w-100" />
           <p className="text-6xl md:text-8xl font-semibold">Contact</p>
           <p className="px-4">Open to new opportunities. Let's connect.</p>
         </div>
