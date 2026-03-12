@@ -5,8 +5,9 @@ import DummyVideo from "../assets/video.png";
 
 const Work = () => {
   const work = [
-    { id: 1, title: "Amazon Bedrock x LEGO Train", path: "https://github.com/eobcre/lego-ai-project", desc: `` },
-    { id: 2, title: "AWS x RAG", path: "https://github.com/eobcre/bedrock-rag-project", desc: `` },
+    { id: 1, title: "Amazon Bedrock x LEGO Train", number: "01", path: "https://github.com/eobcre/lego-ai-project", desc: `` },
+    { id: 2, title: "AWS x RAG", number: "02", path: "https://github.com/eobcre/bedrock-rag-project", desc: `` },
+    { id: 2, title: "Amazon SageMaker x House Price", number: "03", path: "https://github.com/eobcre/ml-house-price", desc: `` },
   ];
 
   return (
@@ -28,9 +29,11 @@ const Work = () => {
       <div className="flex flex-col gap-16 col-span-2 xl:overflow-y-auto px-8 py-10 md:px-30 md:py-30">
         {work.map((item, index) => (
           <div key={item.id} className="flex flex-col gap-4">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+            <div className="relative flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
               {/* title */}
-              <p className="text-lg font-semibold">{item.title}</p>
+              <p className="relative z-10 text-lg font-semibold">{item.title}</p>
+              {/* bg number */}
+              <div className="absolute z-0 text-9xl font-bold text-gray-100">{item.number}</div>
               {/* git link */}
               <a href={item.path} target="_blank" rel="noopener noreferrer">
                 <Icon icon="proicons:github" className="cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
