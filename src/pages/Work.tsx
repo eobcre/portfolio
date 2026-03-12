@@ -28,19 +28,25 @@ const Work = () => {
       {/* right */}
       <div className="flex flex-col gap-16 col-span-2 xl:overflow-y-auto px-8 py-10 md:px-30 md:py-30">
         {work.map((item, index) => (
-          <div key={item.id} className="flex flex-col gap-4">
-            <div className="relative flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+          <div key={item.id} className="relative flex flex-col gap-4">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
               {/* title */}
               <p className="relative z-10 text-lg font-semibold">{item.title}</p>
               {/* bg number */}
-              <div className="absolute z-0 text-9xl font-bold text-gray-100">{item.number}</div>
+              <div
+                className={`absolute z-0 text-[17rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-gray-100 pointer-events-none
+                            md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:text-9xl md:mt-0
+                            ${index === 0 ? "-mt-28" : ""}`}
+              >
+                {item.number}
+              </div>
               {/* git link */}
               <a href={item.path} target="_blank" rel="noopener noreferrer">
-                <Icon icon="proicons:github" className="cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
+                <Icon icon="proicons:github" className="relative z-10 cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
               </a>
             </div>
             {/* desc */}
-            <p className="leading-loose">
+            <p className="relative z-10 leading-loose">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores ea qui eius laborum
               doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores
               ea qui eius laborum doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam,
