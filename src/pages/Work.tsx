@@ -5,9 +5,9 @@ import DummyVideo from "../assets/video.png";
 
 const Work = () => {
   const work = [
-    { id: 1, title: "Amazon Bedrock x LEGO Train", number: "01", path: "https://github.com/eobcre/lego-ai-project", desc: `` },
-    { id: 2, title: "AWS x RAG", number: "02", path: "https://github.com/eobcre/bedrock-rag-project", desc: `` },
-    { id: 2, title: "Amazon SageMaker x House Price", number: "03", path: "https://github.com/eobcre/ml-house-price", desc: `` },
+    { id: 1, title: "Amazon Bedrock x LEGO Train", number: "01", path: import.meta.env.VITE_LEGO_REPO, desc: `` },
+    { id: 2, title: "AWS x RAG", number: "02", link: import.meta.env.VITE_RAG_URL, path: import.meta.env.VITE_RAG_REPO, desc: `` },
+    { id: 2, title: "Amazon SageMaker x House Price", number: "03", path: import.meta.env.VITE_ML_REPO, desc: `` },
   ];
 
   return (
@@ -41,9 +41,14 @@ const Work = () => {
                 {item.number}
               </div>
               {/* git link */}
-              <a href={item.path} target="_blank" rel="noopener noreferrer">
-                <Icon icon="proicons:github" className="relative z-10 cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
-              </a>
+              <div className="flex items-center gap-4">
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="akar-icons:link-out" className="relative z-10 cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7 h-7 md:w-9 md:h-9" />
+                </a>
+                <a href={item.path} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="proicons:github" className="relative z-10 cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
+                </a>
+              </div>
             </div>
             {/* desc */}
             <p className="relative z-10 leading-loose">
