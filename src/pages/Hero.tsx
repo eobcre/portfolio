@@ -15,10 +15,10 @@ const Hero = () => {
         <p className="text-main text-4xl md:text-7xl lg:text-8xl xl:text-9xl uppercase">Emmy Manning</p>
         <div className="flex justify-end items-center gap-2">
           <p className="text-main text-xl xl:text-2xl">AI Cloud Engineer ー</p>
-          <a href="https://www.linkedin.com/in/emmymanning/" target="_blank" rel="noopener noreferrer">
+          <a href={import.meta.env.VITE_LINKEDIN} target="_blank" rel="noopener noreferrer">
             <Icon icon="foundation:social-linkedin" className="text-main cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
           </a>
-          <a href="https://github.com/eobcre" target="_blank" rel="noopener noreferrer">
+          <a href={import.meta.env.VITE_GITHUB} target="_blank" rel="noopener noreferrer">
             <Icon icon="proicons:github" className="text-main cursor-pointer hover:opacity-60 transition-all duration-300 ease-out w-7.5 h-7.5 md:w-10 md:h-10" />
           </a>
         </div>
