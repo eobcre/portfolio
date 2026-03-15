@@ -1,4 +1,5 @@
 # Portfolio
+This is my personal portfolio website showcasing projects built with AWS and React.
 
 ## Tech Stack
 - Amazon SES
