@@ -1,13 +1,36 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import Image from "../assets/bg-image-03.png";
+import RagImage from "../assets/rag.png";
 import DummyVideo from "../assets/video.png";
+import DummyImage from "../assets/image.jpg";
 
 const Work = () => {
   const work = [
-    { id: 1, title: "Amazon Bedrock x LEGO Train", number: "01", path: import.meta.env.VITE_LEGO_REPO, desc: `` },
-    { id: 2, title: "AWS x RAG", number: "02", link: import.meta.env.VITE_RAG_URL, path: import.meta.env.VITE_RAG_REPO, desc: `` },
-    { id: 2, title: "Amazon SageMaker x House Price", number: "03", path: import.meta.env.VITE_ML_REPO, desc: `` },
+    {
+      id: 1,
+      title: "Amazon Bedrock x LEGO Train",
+      number: "01",
+      path: import.meta.env.VITE_LEGO_REPO,
+      desc: `AI-powered application that controls a LEGO train using NLP. The system integrates Amazon Bedrock to interpret user input and trigger train actions via Bluetooth.`,
+    },
+    {
+      id: 2,
+      title: "AWS x RAG",
+      number: "02",
+      link: import.meta.env.VITE_RAG_URL,
+      path: import.meta.env.VITE_RAG_REPO,
+      desc: `A Retrieval-Augmented Generation (RAG) application built with Amazon Bedrock Knowledge Bases that performs semantic retrieval and generates grounded responses using an LLM.`,
+      image: RagImage,
+    },
+    {
+      id: 3,
+      title: "Amazon SageMaker x House Price",
+      number: "03",
+      path: import.meta.env.VITE_ML_REPO,
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur dignissimos voluptas aliquam inventore nam possimus suscipit, tenetur voluptates quo omnis sed numquam beatae? Ex eligendi dolorem delectus blanditiis illo.`,
+      image: DummyImage,
+    },
   ];
 
   return (
@@ -51,14 +74,23 @@ const Work = () => {
               </div>
             </div>
             {/* desc */}
-            <p className="relative z-10 leading-loose">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores ea qui eius laborum
-              doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam, labore vitae maiores
-              ea qui eius laborum doloremque porro officiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor ex corrupti ut sit eos, iste laudantium voluptates sapiente aperiam,
-              labore vitae maiores ea qui eius laborum doloremque porro officiis.
-            </p>
+            <div className="relative z-10 py-10">
+              <p className="leading-loose">{item.desc}</p>
+            </div>
+            {/* portfolio image */}
+            {index !== 0 && (
+              <div className="pb-10">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="cursor-default">
+                  <img src={item.image} alt="Image" className="cursor-pointer w-100" />
+                </a>
+              </div>
+            )}
             {/* video */}
-            {index === 0 && <img src={DummyVideo} alt="Image" width={400} height={400} className="py-4" />}
+            {index === 0 && (
+              <div className="pb-10">
+                <img src={DummyVideo} alt="Image" className="cursor-pointer w-100" />
+              </div>
+            )}
             {/* underline */}
             <span className="bg-gray-200 w-full h-px" />
           </div>
