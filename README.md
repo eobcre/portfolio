@@ -1,7 +1,5 @@
 # Portfolio
 
-## Architecture
-
 ## Tech Stack
 - Amazon SES
 - AWS Lambda
