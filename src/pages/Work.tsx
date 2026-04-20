@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import Image from "../assets/bg-image-03.png";
 import RagImage from "../assets/rag.png";
+import MlImage from "../assets/ml.png";
 import DummyVideo from "../assets/video.png";
-import DummyImage from "../assets/image.jpg";
 
 const Work = () => {
   const work = [
@@ -20,16 +20,17 @@ const Work = () => {
       number: "02",
       link: import.meta.env.VITE_RAG_URL,
       path: import.meta.env.VITE_RAG_REPO,
-      desc: `A Retrieval-Augmented Generation (RAG) application built with Amazon Bedrock Knowledge Bases that performs semantic retrieval and generates grounded responses using an LLM.`,
+      desc: `A Retrieval-Augmented Generation (RAG) web application built with Amazon Bedrock Knowledge Bases that performs semantic retrieval and generates grounded responses using an LLM.`,
       image: RagImage,
     },
     {
       id: 3,
-      title: "Amazon SageMaker x House Price",
+      title: "Amazon SageMaker x House Price Prediction",
       number: "03",
+      link: import.meta.env.VITE_ML_URL,
       path: import.meta.env.VITE_ML_REPO,
-      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur dignissimos voluptas aliquam inventore nam possimus suscipit, tenetur voluptates quo omnis sed numquam beatae? Ex eligendi dolorem delectus blanditiis illo.`,
-      image: DummyImage,
+      desc: `A house price prediction web application that provides real-time house price predictions based on user inputs, using a ML model deployed on AWS serverless infrastructure.`,
+      image: MlImage,
     },
   ];
 
