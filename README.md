@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing my projects, skills and professional background.
 
-## 🛠 Tech Stack
+### 🛠 Tech Stack
 
 - Amazon SES
 - AWS Lambda
@@ -13,13 +13,16 @@ My personal portfolio website showcasing my projects, skills and professional ba
 - React (Vite)
 - Tailwind CSS
 
-## 🚀 Features
+### 🚀 Features
 
 - Email feature in contact form with Amazon SES
 - Serverless backend with AWS Lambda and Amazon API Gateway
 - Responsive UI
 - Includes sections for About, Experience, Work and Contact.
 
-## 💻 Demo
+### 🔗 Related Projects
+Lambda function code is available in a separate repository: [Serverless API](https://github.com/eobcre/portfolio-backend-serverless)
+
+### 💻 Demo
 
 [View Demo](https://e-manning.dev/)
