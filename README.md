@@ -18,7 +18,7 @@ My personal portfolio website showcasing my projects, skills and professional ba
 - Email feature in contact form with Amazon SES
 - Serverless backend with AWS Lambda and Amazon API Gateway
 - Responsive UI
-- Includes sections for About, Experience, Work and Contact.
+- Includes sections for About, Experience, Work and Contact
 
 ### 🔗 Related Projects
 Lambda function code is available in a separate repository: [Serverless API](https://github.com/eobcre/portfolio-backend-serverless)
