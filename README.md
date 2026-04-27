@@ -1,7 +1,9 @@
-# Portfolio
-This is my personal portfolio website showcasing projects built with AWS and React.
+# My Portfolio
 
-## Tech Stack
+My personal portfolio website showcasing my projects, skills and professional background.
+
+## 🛠 Tech Stack
+
 - Amazon SES
 - AWS Lambda
 - Amazon API Gateway
@@ -9,12 +11,15 @@ This is my personal portfolio website showcasing projects built with AWS and Rea
 - Amaon S3
 - Amazon Route 53
 - React (Vite)
-- Tailwind
+- Tailwind CSS
 
-## Features
+## 🚀 Features
+
 - Email feature in contact form with Amazon SES
-- Serverless backend with AWS Lambda x Amazon API Gateway
+- Serverless backend with AWS Lambda and Amazon API Gateway
 - Responsive UI
+- Includes sections for About, Experience, Work and Contact.
 
-## Demo
+## 💻 Demo
+
 [View Demo](https://e-manning.dev/)
