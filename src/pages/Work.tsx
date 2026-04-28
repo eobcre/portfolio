@@ -9,14 +9,14 @@ const Work = () => {
   const work = [
     {
       id: 1,
-      title: "Amazon Bedrock x LEGO Train",
+      title: "AI-Powered LEGO Train Control System",
       number: "01",
       path: import.meta.env.VITE_LEGO_REPO,
       desc: `AI-powered application that controls a LEGO train using NLP. The system integrates Amazon Bedrock to interpret user input and trigger train actions via Bluetooth.`,
     },
     {
       id: 2,
-      title: "AWS x RAG",
+      title: "RAG-Powered Knowledge System",
       number: "02",
       link: import.meta.env.VITE_RAG_URL,
       path: import.meta.env.VITE_RAG_REPO,
@@ -25,7 +25,7 @@ const Work = () => {
     },
     {
       id: 3,
-      title: "Amazon SageMaker x House Price Prediction",
+      title: "House Price Prediction App",
       number: "03",
       link: import.meta.env.VITE_ML_URL,
       path: import.meta.env.VITE_ML_REPO,
