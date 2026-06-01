@@ -6,7 +6,7 @@ const Experience = () => {
   const experience = [
     {
       id: 1,
-      date: "2024 Feb ー 2025 Nov",
+      date: "Dec 2023 ー May 2025",
       title: "Full Stack Software Engineer",
       desc: `Designed, architected, and operated production-grade financial systems on AWS, supporting scalable and secure cloud-native workloads. 
              Developed a configurable Form Builder platform with role-based access control, workflow automation, and event-driven notifications.`,
@@ -14,7 +14,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      date: "2023 Oct ー 2024 Feb",
+      date: "Oct 2022 ー Dec 2023",
       title: "Software Engineer Internship - Team Lead",
       desc: `Led development of a cloud-deployed beauty services platform on AWS, delivering a scalable full stack application. 
              Collaborated cross-functionally to ensure cohesive architecture, system reliability, and optimized user experience.`,
