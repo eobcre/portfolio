@@ -89,7 +89,7 @@ const Work = () => {
             {/* video */}
             {index === 0 && (
               <div className="pb-10">
-                <video src={Video} controls preload="metadata" width="100%" />{" "}
+                <video src={Video} controls preload="metadata" width="100%" />
               </div>
             )}
             {/* underline */}
