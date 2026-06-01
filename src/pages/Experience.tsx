@@ -35,7 +35,7 @@ const Experience = () => {
         <div className="relative flex flex-col justify-center items-center flex-1 gap-6 py-20 xl:py-0">
           <img src={Image} alt="Image" className="absolute opacity-10 w-100 xl:w-140" />
           <p className="text-6xl md:text-8xl font-semibold">Experience</p>
-          <p className="px-4 w-160">2+ years of experience delivering web applications on AWS, expanding into AI and generative cloud systems.</p>
+          <p className="px-4 w-full lg:w-150">2+ years of experience delivering web applications on AWS, expanding into AI and generative cloud systems.</p>
         </div>
       </div>
       {/* right */}
