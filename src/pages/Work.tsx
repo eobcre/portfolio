@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import Image from "../assets/bg-image-03.png";
 import RagImage from "../assets/rag.png";
 import MlImage from "../assets/ml.png";
-import DummyVideo from "../assets/video.png";
+import Video from "../assets/demo.mov";
 
 const Work = () => {
   const work = [
@@ -89,7 +89,7 @@ const Work = () => {
             {/* video */}
             {index === 0 && (
               <div className="pb-10">
-                <img src={DummyVideo} alt="Image" className="cursor-pointer w-100" />
+                <video src={Video} controls preload="metadata" width="100%" />{" "}
               </div>
             )}
             {/* underline */}
