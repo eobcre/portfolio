@@ -58,9 +58,8 @@ const Work = () => {
               <p className="relative z-10 text-lg font-semibold">{item.title}</p>
               {/* bg number */}
               <div
-                className={`absolute z-0 text-[17rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-gray-100 pointer-events-none
-                            md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:text-9xl md:mt-0
-                            ${index === 0 ? "-mt-28" : ""}`}
+                className="absolute z-0 text-[17rem] top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-gray-100 pointer-events-none
+                            md:top-auto md:left-auto md:translate-x-0 md:translate-y-0 md:text-9xl md:mt-0"
               >
                 {item.number}
               </div>
