@@ -7,7 +7,7 @@ const Experience = () => {
     {
       id: 1,
       date: "Dec 2023 ー May 2025",
-      title: "Full Stack Software Engineer",
+      title: "Software Engineer",
       desc: `Designed, architected, and operated production-grade financial systems on AWS, supporting scalable and secure cloud-native workloads. 
              Developed a configurable Form Builder platform with role-based access control, workflow automation, and event-driven notifications.`,
       certification: ["- AWS Certified Machine Learning Engineer Associate", "- AWS Certified Solutions Architect Associate", "- AWS Certified Developer Associate", "- AWS Certified AI Foundations", "- AWS Certified Cloud Practitioner "],
