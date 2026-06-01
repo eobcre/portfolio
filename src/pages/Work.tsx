@@ -82,14 +82,14 @@ const Work = () => {
             {index !== 0 && (
               <div className="pb-10">
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="cursor-default">
-                  <img src={item.image} alt="Image" className="cursor-pointer w-100" />
+                  <img src={item.image} alt="Image" className="cursor-pointer w-full" />
                 </a>
               </div>
             )}
             {/* video */}
             {index === 0 && (
-              <div className="pb-10">
-                <video src={Video} controls preload="metadata" width="100%" />
+              <div className="pb-10 w-full">
+                <video src={Video} controls preload="metadata" />
               </div>
             )}
             {/* underline */}
