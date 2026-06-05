@@ -21,7 +21,7 @@ My personal portfolio website showcasing my projects, skills and professional ba
 - Includes sections for About, Experience, Work and Contact.
 
 ### 🔗 Related Projects
-Lambda function code is available in a separate repository: [Serverless API](https://github.com/eobcre/portfolio-backend-serverless)
+Lambda function code is available in a separate repository: [Email API](https://github.com/eobcre/portfolio-backend-serverless)
 
 ### 💻 Demo
 
